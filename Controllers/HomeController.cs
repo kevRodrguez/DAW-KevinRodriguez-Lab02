@@ -20,20 +20,18 @@ public class HomeController : Controller
 
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public IActionResult Create(ProductoModel producto)
+    public IActionResult Create(HomeViewModel model)
     {
+        var producto = model.ProductoNuevo;
+
         if (ModelState.IsValid)
         {
             ProductoRepository.Agregar(producto);
             return RedirectToAction(nameof(Index));
         }
 
-        var viewModel = new HomeViewModel
-        {
-            Productos = ProductoRepository.ObtenerTodos().ToList()
-        };
-
-        return View("Index", viewModel);
+        model.Productos = ProductoRepository.ObtenerTodos().ToList();
+        return View("Index", model);
     }
 
     public IActionResult Privacy()

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CRUDWebApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1a2e1fb9eb33e0836df6f9a2eaae907f9d912884")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3975e58413775d68f09668f1a1eec823083e567d")]
 [assembly: System.Reflection.AssemblyProductAttribute("CRUDWebApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CRUDWebApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
