@@ -95,3 +95,4 @@
 /Users/kevrodriguez/Documents/Documentos Kevin/1. INGENIERIA EN DESARROLLO DE SOFTWARE/Desarrollo de Aplicaciones Web/CRUDWebApp/obj/Debug/net10.0/CRUDWebApp.pdb
 /Users/kevrodriguez/Documents/Documentos Kevin/1. INGENIERIA EN DESARROLLO DE SOFTWARE/Desarrollo de Aplicaciones Web/CRUDWebApp/obj/Debug/net10.0/CRUDWebApp.genruntimeconfig.cache
 /Users/kevrodriguez/Documents/Documentos Kevin/1. INGENIERIA EN DESARROLLO DE SOFTWARE/Desarrollo de Aplicaciones Web/CRUDWebApp/obj/Debug/net10.0/ref/CRUDWebApp.dll
+/Users/kevrodriguez/Documents/Documentos Kevin/1. INGENIERIA EN DESARROLLO DE SOFTWARE/Desarrollo de Aplicaciones Web/CRUDWebApp/obj/Debug/net10.0/CRUDWebApp.sourcelink.json

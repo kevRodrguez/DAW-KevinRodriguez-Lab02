@@ -9,8 +9,8 @@
         <p class="text-muted mb-0">Explora los productos disponibles en nuestra tienda.</p>
     </div>
 
-    <div class="col-6 d-flex justify-content-end">
-        <button type="button" class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Nuevo Producto</button>
+    <div class="col-6 d-flex align-items-center justify-content-end">
+        <button type="button" class="btn btn-primary me-2 btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">Nuevo Producto</button>
     </div>
 </div>
 
@@ -70,13 +70,43 @@ else
         <h5 class="modal-title" id="exampleModalLabel">Nuevo producto</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
       </div>
+      <form asp-action="Create" asp-controller="Home" method="post">
       <div class="modal-body">
-        ...
+        <div class="mb-3">
+            <label for="Nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="Nombre" name="Nombre" placeholder="Nombre" required>
+        </div>
+        <div class="mb-3">
+            <label for="Descripcion" class="form-label">Descripción</label>
+            <input type="text" class="form-control" id="Descripcion" name="Descripcion" placeholder="Descripción" required>
+        </div>
+        <div class="mb-3">
+            <label for="Precio" class="form-label">Precio</label>
+            <input type="number" step="0.01" min="0.01" class="form-control" id="Precio" name="Precio" placeholder="Precio" required>
+        </div>
+        <div class="mb-3">
+            <label for="Stock" class="form-label">Stock</label>
+            <input type="number" min="0" class="form-control" id="Stock" name="Stock" placeholder="Stock" required>
+        </div>
+        <div class="mb-3">
+            <label for="Imagen" class="form-label">URL de imagen (opcional)</label>
+            <input type="url" class="form-control" id="Imagen" name="Imagen" placeholder="https://...">
+        </div>
+        <div class="mb-3">
+            <label for="CategoriaId" class="form-label">Categoría</label>
+            <select class="form-select" id="CategoriaId" name="CategoriaId" required>
+                <option value="">Selecciona una categoría</option>
+                <option value="1">Electrónica</option>
+                <option value="2">Accesorios</option>
+                <option value="3">Hogar</option>
+            </select>
+        </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-        <button type="button" class="btn btn-primary">Guardar</button>
+        <button type="submit" class="btn btn-primary" form="form-create">Guardar</button>
       </div>
+      </form>
     </div>
   </div>
 </div>
